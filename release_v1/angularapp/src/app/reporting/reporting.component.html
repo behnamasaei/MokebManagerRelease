@@ -1,0 +1,48 @@
+<div class="card flex justify-content-center">
+  <p-accordion [activeIndex]="0">
+    <p-accordionTab header="گزارش تعداد پذیرش ها به تفکیک موکب">
+      <div class="card flex justify-content-center align-items-center">
+        <p>
+          توجه فرمائید: مبنای محاسبه برحسب ابتدای روز هست به عنوان مثال: در صورت انتخاب بازه
+          1403/05/03 - 1403/05/04 تمام پذیرش هایی که از ساعت 0:0:0 روز 1403/05/03 تا ساعت 0:0:0
+          1403/05/04 صورت گرفته نشان داده خواهد شد.
+        </p>
+        <!-- <p-calendar
+          [(ngModel)]="rangeDates"
+          [showIcon]="true"
+          selectionMode="range"
+          [readonlyInput]="true"
+        /> -->
+
+        <mat-form-field>
+          <mat-label>بازه زمانی راانتخاب کنید</mat-label>
+          <mat-date-range-input [rangePicker]="picker">
+            <input matStartDate placeholder="تاریخ شروع" [(ngModel)]="startDate" />
+            <input matEndDate placeholder="تاریخ پایان" [(ngModel)]="endDate" />
+          </mat-date-range-input>
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-date-range-picker #picker></mat-date-range-picker>
+        </mat-form-field>
+
+        <button
+          type="button"
+          (click)="searchInRangeDate()"
+          pButton
+          label="جستجو"
+          class="my-4"
+        ></button>
+
+        <p-chart type="bar" [data]="mokebReserveInRangeData" [options]="basicOptions" />
+      </div>
+    </p-accordionTab>
+    <p-accordionTab header="گزارش ظرفیت های موجود موکب ها" class="p-5">
+      <div class="card p-5">
+        <p-chart type="bar" class="p-5" [data]="mokebFreeCapacityData" [options]="basicOptions" />
+      </div>
+
+      <div class="card p-5">
+        <p-chart type="bar" class="p-5" [data]="mokebData" [options]="basicOptions" />
+      </div>
+    </p-accordionTab>
+  </p-accordion>
+</div>

@@ -1,0 +1,95 @@
+<p>{{ '::MokebSettings' | abpLocalization }}</p>
+
+<p-toast /> <p-confirmDialog />
+<p-toolbar styleClass="mb-4 gap-2">
+  <ng-template pTemplate="left">
+    <p-button
+      pRipple
+      severity="success"
+      label="{{ '::NewRecord' | abpLocalization }}"
+      icon="pi pi-plus"
+      class="mr-2"
+      (click)="openNew()"
+    />
+  </ng-template>
+</p-toolbar>
+
+<p-table
+  #dt
+  [value]="mokeb.items"
+  [globalFilterFields]="['name', 'country.name', 'representative.name', 'status']"
+  [tableStyle]="{ 'min-width': '75rem' }"
+  [rowHover]="true"
+  dataKey="id"
+>
+  <ng-template pTemplate="caption">
+    <div class="flex align-items-center justify-content-between">
+      <h5 class="m-0">{{ '::MokebSettings' | abpLocalization }}</h5>
+      <span class="p-input-icon-left">
+        <i class="pi pi-search"></i>
+        <input
+          pInputText
+          type="text"
+          (input)="dt.filterGlobal($event.target.value, 'contains')"
+          placeholder="{{ '::Search' | abpLocalization }}"
+        />
+      </span>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="header">
+    <tr>
+      <th pSortableColumn="name">{{ '::Name' | abpLocalization }} <p-sortIcon field="name" /></th>
+      <th pSortableColumn="gender">
+        {{ '::Gender' | abpLocalization }} <p-sortIcon field="gender" />
+      </th>
+      <th pSortableColumn="capacity">
+        {{ '::Capacity' | abpLocalization }} <p-sortIcon field="capacity" />
+      </th>
+      <th></th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-mokeb>
+    <tr>
+      <td>
+        {{ mokeb.name }}
+      </td>
+      <td>
+        <div *ngIf="mokeb.gender == 0">
+          {{ '::Male' | abpLocalization }}
+        </div>
+        <div *ngIf="mokeb.gender == 1">
+          {{ '::Female' | abpLocalization }}
+        </div>
+      </td>
+      <td>
+        {{ mokeb.capacity }}
+      </td>
+      <td>
+        <p-button
+          pRipple
+          icon="pi pi-pencil"
+          class="mr-2"
+          [rounded]="true"
+          [outlined]="true"
+          severity="success"
+          (click)="editMokeb(mokeb)"
+        />
+        <p-button
+          pRipple
+          icon="pi pi-trash"
+          severity="danger"
+          [rounded]="true"
+          [outlined]="true"
+          (click)="deleteMokeb(mokeb)"
+        />
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
+
+<p-paginator
+  (onPageChange)="onPageChange($event)"
+  [first]="paged.skipCount"
+  [rows]="paged.maxResultCount"
+  [totalRecords]="mokeb.totalCount"
+/>

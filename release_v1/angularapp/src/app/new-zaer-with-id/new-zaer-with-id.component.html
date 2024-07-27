@@ -1,0 +1,154 @@
+<!-- clock-example.component.html -->
+<p-toast />
+
+<app-barcode-scanner
+  [scannerId]="'newZaerScannerId'"
+  (scanResultEvent)="handleScanResult($event)"
+></app-barcode-scanner>
+
+<div *ngIf="scanResult !== null">
+  <p>QrCode: {{ scanResult }}</p>
+
+  <button
+    type="button"
+    (click)="barcodescanner.startScanning()"
+    pButton
+    label="اسکن بارکد"
+    class="mb-3"
+  ></button>
+</div>
+
+<div class="p-fluid">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="p-field mb-3">
+      <label for="passportNo">{{ '::PassportNo' | abpLocalization }}</label>
+      <input id="passportNo" type="text" pInputText formControlName="passportNo" />
+      <small class="required">* {{ '::requiredField' | abpLocalization }}</small>
+    </div>
+
+    <div class="p-field mb-3">
+      <label for="gender">{{ '::Gender' | abpLocalization }}</label>
+      <p-dropdown
+        [options]="genders"
+        formControlName="gender"
+        placeholder="{{ '::SelectGender' | abpLocalization }}"
+        (onChange)="changeGender()"
+      ></p-dropdown>
+      <small class="required">* {{ '::requiredField' | abpLocalization }}</small>
+    </div>
+
+    <div class="p-field mb-3">
+      <label for="mokebId">{{ '::Mokeb' | abpLocalization }} </label>
+      <p-dropdown
+        [options]="mokebsDropDown"
+        formControlName="mokebId"
+        optionLabel="label"
+        optionValue="value"
+        placeholder="{{ '::SelectMokeb' | abpLocalization }}"
+      />
+      <small class="required">* {{ '::requiredField' | abpLocalization }}</small>
+    </div>
+
+    <div class="p-field mb-3">
+      <label for="gender">{{ '::StayingTime' | abpLocalization }} </label>
+      <div class="d-flex gap-5">
+        <div *ngFor="let entryExitOption of entryExitOptions" class="field-checkbox">
+          <p-radioButton
+            [inputId]="entryExitOption.key"
+            [value]="entryExitOption"
+            formControlName="entryExitDate"
+          />
+          <label [for]="entryExitOption.key" class="ml-2">
+            {{ entryExitOption.name }}
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-field mb-3">
+      <label for="name">نام و نام خانوادگی</label>
+      <input id="name" type="text" pInputText formControlName="name" />
+    </div>
+
+    <div class="p-field mb-3">
+      <label for="phoneNumber">{{ '::PhoneNumber' | abpLocalization }}</label>
+      <input id="phoneNumber" type="number" pInputText formControlName="phoneNumber" />
+    </div>
+
+    <div class="card flex justify-content-center mt-3">
+      <p-accordion>
+        <p-accordionTab header="اطلاعات تکمیلی">
+          <div class="p-field mb-3">
+            <label for="image">{{ '::Image' | abpLocalization }} </label>
+            <p-fileUpload
+              #fileUpload
+              name="image"
+              accept="image/*"
+              customUpload
+              formControlName="image"
+              (onSelect)="onFileSelected($event)"
+              auto
+            ></p-fileUpload>
+          </div>
+
+          <div class="p-field mb-3">
+            <p-dropdown
+              [options]="allProvinces"
+              formControlName="state"
+              optionLabel="name"
+              [filter]="true"
+              filterBy="name"
+              placeholder="{{ '::Province' | abpLocalization }}"
+              (onChange)="getCitiesOfProvice($event)"
+            >
+              <ng-template pTemplate="selectedItem" let-selectedOption>
+                <div class="flex align-items-center gap-2">
+                  <div>{{ selectedOption.name }}</div>
+                </div>
+              </ng-template>
+              <ng-template let-provinces pTemplate="item">
+                <div class="flex align-items-center gap-2">
+                  <div>{{ provinces.name }}</div>
+                </div>
+              </ng-template>
+            </p-dropdown>
+          </div>
+
+          <div class="p-field mb-3">
+            <p-dropdown
+              [options]="citiesOfProvince"
+              formControlName="city"
+              optionLabel="name"
+              [filter]="true"
+              filterBy="name"
+              placeholder="{{ '::City' | abpLocalization }}"
+            >
+              <ng-template pTemplate="selectedItem" let-selectedOption>
+                <div class="flex align-items-center gap-2">
+                  <div>{{ selectedOption.name }}</div>
+                </div>
+              </ng-template>
+              <ng-template let-citiesOfProvince pTemplate="item">
+                <div class="flex align-items-center gap-2">
+                  <div>{{ citiesOfProvince.name }}</div>
+                </div>
+              </ng-template>
+            </p-dropdown>
+          </div>
+
+          <div class="p-field mb-3">
+            <label for="address">{{ '::Address' | abpLocalization }}</label>
+            <input id="address" type="text" pInputText formControlName="address" />
+          </div>
+        </p-accordionTab>
+      </p-accordion>
+    </div>
+
+    <button
+      type=" submit"
+      pButton
+      label="{{ '::Submit' | abpLocalization }}"
+      [disabled]="form.invalid"
+    ></button>
+  </form>
+</div>

@@ -1,0 +1,33 @@
+<p-toast></p-toast>
+
+<app-barcode-scanner
+  [scannerId]="'setExitDateScannerId'"
+  (scanResultEvent)="handleScanResult($event)"
+></app-barcode-scanner>
+
+<div *ngIf="scanResult !== null">
+  <p>QrCode: {{ scanResult }}</p>
+
+  <button
+    type="button"
+    (click)="barcodescanner.startScanning()"
+    pButton
+    label="اسکن بارکد"
+    class="mb-3"
+  ></button>
+</div>
+
+<div class="p-fluid">
+  <div class="p-field mb-3">
+    <label for="passportNo">{{ '::PassportNo' | abpLocalization }}</label>
+    <input id="passportNo" type="text" pInputText [(ngModel)]="passportNo" />
+  </div>
+</div>
+
+<button
+  type="submit"
+  pButton
+  label="{{ '::Submit' | abpLocalization }}"
+  (click)="save()"
+  [disabled]="!scanResult && !passportNo"
+></button>

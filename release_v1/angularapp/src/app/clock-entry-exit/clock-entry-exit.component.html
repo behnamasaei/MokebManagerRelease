@@ -1,0 +1,17 @@
+<p>ثبت عبور و مرور</p>
+
+<p-toast />
+
+<app-barcode-scanner
+  [scannerId]="'clockEntryExitId'"
+  (scanResultEvent)="handleScanResult($event)"
+></app-barcode-scanner>
+
+<div>
+  <h3 class="d-flex justify-content-center" [style]="{ color: style }">
+    {{ accessResult }}<br />
+    {{ mokebName }}
+  </h3>
+
+  <button type="button" (click)="barcodeScan()" pButton label="اسکن بارکد" class="mb-3"></button>
+</div>

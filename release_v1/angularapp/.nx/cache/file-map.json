@@ -1,0 +1,366 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.2.8",
+  "deps": {
+    "@abp/ng.account": "~8.1.3",
+    "@abp/ng.components": "~8.1.3",
+    "@abp/ng.core": "~8.1.3",
+    "@abp/ng.identity": "~8.1.3",
+    "@abp/ng.oauth": "~8.1.3",
+    "@abp/ng.setting-management": "~8.1.3",
+    "@abp/ng.tenant-management": "~8.1.3",
+    "@abp/ng.theme.lepton-x": "~3.1.3",
+    "@abp/ng.theme.shared": "~8.1.3",
+    "@abp/nx.generators": "^8.1.4",
+    "@angular/animations": "~17.1.0",
+    "@angular/common": "~17.1.0",
+    "@angular/compiler": "~17.1.0",
+    "@angular/core": "~17.1.0",
+    "@angular/forms": "~17.1.0",
+    "@angular/localize": "~17.1.0",
+    "@angular/platform-browser": "~17.1.0",
+    "@angular/platform-browser-dynamic": "~17.1.0",
+    "@angular/router": "~17.1.0",
+    "bootstrap-icons": "~1.8.0",
+    "g": "^2.0.1",
+    "moment": "^2.30.1",
+    "primeicons": "^7.0.0",
+    "primeng": "^17.18.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.0.0",
+    "vazirmatn": "^33.0.3",
+    "zone.js": "~0.14.0",
+    "@abp/ng.schematics": "~8.1.3",
+    "@angular-devkit/build-angular": "^17.3.8",
+    "@angular-eslint/builder": "~17.2.0",
+    "@angular-eslint/eslint-plugin": "~17.2.0",
+    "@angular-eslint/eslint-plugin-template": "~17.2.0",
+    "@angular-eslint/schematics": "~17.2.0",
+    "@angular-eslint/template-parser": "~17.2.0",
+    "@angular/cli": "~17.1.0",
+    "@angular/compiler-cli": "~17.1.0",
+    "@angular/language-service": "~17.1.0",
+    "@types/jasmine": "~3.6.0",
+    "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "6.9.1",
+    "@typescript-eslint/parser": "6.9.1",
+    "eslint": "^8.23.0",
+    "jasmine-core": "~4.0.0",
+    "karma": "~6.3.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.1.0",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "^1.7.0",
+    "typescript": "~5.3.0"
+  },
+  "pathMappings": {
+    "@proxy": [
+      "src/app/proxy/index.ts"
+    ],
+    "@proxy/*": [
+      "src/app/proxy/*"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "6686520031028425313"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "573684000319070816"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "540290621358387889"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "6168493806199751027"
+      },
+      {
+        "file": "README.md",
+        "hash": "16795692286967491709"
+      },
+      {
+        "file": "angular.json",
+        "hash": "13143611401263273407"
+      },
+      {
+        "file": "karma.conf.js",
+        "hash": "2216644475881796624"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "5761975645144217326"
+      },
+      {
+        "file": "package.json",
+        "hash": "9600108909666113237"
+      },
+      {
+        "file": "src/app/app-routing.module.ts",
+        "hash": "8708602524977355550"
+      },
+      {
+        "file": "src/app/app.component.ts",
+        "hash": "11551820365482607915"
+      },
+      {
+        "file": "src/app/app.module.ts",
+        "hash": "8313334209870929354"
+      },
+      {
+        "file": "src/app/home/home-routing.module.ts",
+        "hash": "15886894779009877531"
+      },
+      {
+        "file": "src/app/home/home.component.html",
+        "hash": "14890380288676807751"
+      },
+      {
+        "file": "src/app/home/home.component.scss",
+        "hash": "527566599148079859"
+      },
+      {
+        "file": "src/app/home/home.component.spec.ts",
+        "hash": "16756827662086599220"
+      },
+      {
+        "file": "src/app/home/home.component.ts",
+        "hash": "2472158814260521109"
+      },
+      {
+        "file": "src/app/home/home.module.ts",
+        "hash": "8782860134245389693"
+      },
+      {
+        "file": "src/app/new-zaer/new-zaer.component.html",
+        "hash": "12340748415421688962"
+      },
+      {
+        "file": "src/app/new-zaer/new-zaer.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/new-zaer/new-zaer.component.spec.ts",
+        "hash": "11239821752753273508"
+      },
+      {
+        "file": "src/app/new-zaer/new-zaer.component.ts",
+        "hash": "12325624396679719134"
+      },
+      {
+        "file": "src/app/proxy/README.md",
+        "hash": "1477775973619250547"
+      },
+      {
+        "file": "src/app/proxy/domain/create-update-dtos/index.ts",
+        "hash": "12954640855103947404"
+      },
+      {
+        "file": "src/app/proxy/domain/create-update-dtos/models.ts",
+        "hash": "590819181015342623"
+      },
+      {
+        "file": "src/app/proxy/domain/dtos/index.ts",
+        "hash": "12954640855103947404"
+      },
+      {
+        "file": "src/app/proxy/domain/dtos/models.ts",
+        "hash": "6479369503372005463"
+      },
+      {
+        "file": "src/app/proxy/domain/index.ts",
+        "hash": "12109736193470493818"
+      },
+      {
+        "file": "src/app/proxy/entry-exit-zaer.service.ts",
+        "hash": "7265936181622009256"
+      },
+      {
+        "file": "src/app/proxy/gender.enum.ts",
+        "hash": "10962960832736785467"
+      },
+      {
+        "file": "src/app/proxy/generate-proxy.json",
+        "hash": "995063135045231970"
+      },
+      {
+        "file": "src/app/proxy/index.ts",
+        "hash": "9601066104214433766"
+      },
+      {
+        "file": "src/app/proxy/microsoft/asp-net-core/http/index.ts",
+        "hash": "12954640855103947404"
+      },
+      {
+        "file": "src/app/proxy/microsoft/asp-net-core/http/models.ts",
+        "hash": "4937330726344862928"
+      },
+      {
+        "file": "src/app/proxy/microsoft/asp-net-core/index.ts",
+        "hash": "8438463139219492480"
+      },
+      {
+        "file": "src/app/proxy/microsoft/index.ts",
+        "hash": "15781155685530444481"
+      },
+      {
+        "file": "src/app/proxy/models.ts",
+        "hash": "6576689172768661683"
+      },
+      {
+        "file": "src/app/proxy/mokeb.service.ts",
+        "hash": "13603411232250766710"
+      },
+      {
+        "file": "src/app/proxy/volo/abp/domain/entities/index.ts",
+        "hash": "12954640855103947404"
+      },
+      {
+        "file": "src/app/proxy/volo/abp/domain/entities/models.ts",
+        "hash": "15493042736217548902"
+      },
+      {
+        "file": "src/app/proxy/volo/abp/domain/index.ts",
+        "hash": "2387719206549926781"
+      },
+      {
+        "file": "src/app/proxy/volo/abp/index.ts",
+        "hash": "3837906220323809865"
+      },
+      {
+        "file": "src/app/proxy/volo/index.ts",
+        "hash": "10173952181014085289"
+      },
+      {
+        "file": "src/app/proxy/zaer.service.ts",
+        "hash": "11163911986256628362"
+      },
+      {
+        "file": "src/app/route.provider.ts",
+        "hash": "18233511954020048899"
+      },
+      {
+        "file": "src/app/settings/create-update-mokeb/create-update-mokeb.component.html",
+        "hash": "14007484161627004742"
+      },
+      {
+        "file": "src/app/settings/create-update-mokeb/create-update-mokeb.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/settings/create-update-mokeb/create-update-mokeb.component.spec.ts",
+        "hash": "9689769326014464753"
+      },
+      {
+        "file": "src/app/settings/create-update-mokeb/create-update-mokeb.component.ts",
+        "hash": "5250107655935570087"
+      },
+      {
+        "file": "src/app/settings/mokeb/mokeb.component.html",
+        "hash": "12399802578003924864"
+      },
+      {
+        "file": "src/app/settings/mokeb/mokeb.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/settings/mokeb/mokeb.component.spec.ts",
+        "hash": "2736098229954978179"
+      },
+      {
+        "file": "src/app/settings/mokeb/mokeb.component.ts",
+        "hash": "2959286228206233185"
+      },
+      {
+        "file": "src/app/settings/settings-routing.module.ts",
+        "hash": "3637334356754765308"
+      },
+      {
+        "file": "src/app/settings/settings.component.ts",
+        "hash": "8532542802611275943"
+      },
+      {
+        "file": "src/app/settings/settings.module.ts",
+        "hash": "9062211453925064494"
+      },
+      {
+        "file": "src/app/shared/shared.model.ts",
+        "hash": "8514049049081289337"
+      },
+      {
+        "file": "src/app/shared/shared.module.ts",
+        "hash": "4912601696785602183"
+      },
+      {
+        "file": "src/assets/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/assets/images/logo/logo-light-thumbnail.png",
+        "hash": "17772917879222203266"
+      },
+      {
+        "file": "src/assets/images/logo/logo-light.png",
+        "hash": "11450213427971215136"
+      },
+      {
+        "file": "src/environments/environment.prod.ts",
+        "hash": "11935053311750761824"
+      },
+      {
+        "file": "src/environments/environment.ts",
+        "hash": "14750268444811912151"
+      },
+      {
+        "file": "src/favicon.ico",
+        "hash": "15317840586541516200"
+      },
+      {
+        "file": "src/index.html",
+        "hash": "17190402792528552733"
+      },
+      {
+        "file": "src/main.ts",
+        "hash": "5887030582951756191"
+      },
+      {
+        "file": "src/polyfills.ts",
+        "hash": "4474262888246452637"
+      },
+      {
+        "file": "src/styles.scss",
+        "hash": "14807789458177974359"
+      },
+      {
+        "file": "src/test.ts",
+        "hash": "1727808520902605569"
+      },
+      {
+        "file": "start.ps1",
+        "hash": "13564748798185743603"
+      },
+      {
+        "file": "tsconfig.app.json",
+        "hash": "9041030522571917449"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "16194687504097092528"
+      },
+      {
+        "file": "tsconfig.spec.json",
+        "hash": "17198424518534092990"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "3869847873682231115"
+      }
+    ]
+  }
+}

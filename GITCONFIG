@@ -1,4 +1,0 @@
-GIT CONFIG:
-
-git config --global http.postBuffer 524288000
-git lfs install

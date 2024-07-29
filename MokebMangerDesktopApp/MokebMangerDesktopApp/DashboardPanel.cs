@@ -13,7 +13,7 @@ namespace MokebMangerDesktopApp
     internal class DashboardPanel
     {
 
-        const string ENVIRONMENT_PATH = @".\environment.ts";
+        const string ENVIRONMENT_PATH = @".\release_v1\angularapp\src\environments\environment.ts";
 
 
         private Process _process = null;

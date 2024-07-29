@@ -38,7 +38,6 @@
             btnRunDotnet = new Button();
             label5 = new Label();
             label6 = new Label();
-            label7 = new Label();
             lblWait = new Label();
             button1 = new Button();
             panel1.SuspendLayout();
@@ -152,17 +151,6 @@
             label6.TabIndex = 4;
             label6.Text = "سامانه مدیریت اسکان زائرین موکب شهدای فاوا (نسخه اولیه)";
             // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 10F);
-            label7.ForeColor = Color.Red;
-            label7.Location = new Point(352, 115);
-            label7.Name = "label7";
-            label7.Size = new Size(505, 19);
-            label7.TabIndex = 5;
-            label7.Text = "چنانچه برنامه خارج شد یا اجرا نشد سیستم را ریستارت کرده و دوباره برنامه را اجرا کنید.";
-            // 
             // lblWait
             // 
             lblWait.AutoSize = true;
@@ -192,7 +180,6 @@
             ClientSize = new Size(869, 591);
             Controls.Add(button1);
             Controls.Add(lblWait);
-            Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(btnRunDotnet);
@@ -218,7 +205,6 @@
         private Button btnRunDotnet;
         private Label label5;
         private Label label6;
-        private Label label7;
         private LinkLabel lblAngularIp;
         private LinkLabel lblDotnetIp;
         private Label lblWait;

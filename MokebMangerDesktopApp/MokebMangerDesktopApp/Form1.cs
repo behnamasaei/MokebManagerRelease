@@ -1,4 +1,6 @@
-﻿namespace MokebMangerDesktopApp
+﻿using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
+namespace MokebMangerDesktopApp
 {
     public partial class Form1 : Form
     {
@@ -27,7 +29,12 @@
         {
             await Task.Run(async () =>
             {
-                this.lblWait.Show();
+                // به‌روزرسانی کنترل UI از Thread اصلی
+                this.Invoke(new Action(async () =>
+                {
+                    this.lblWait.Show();
+                }));
+                
                 await RunHostDotnet();
             });
 
@@ -39,8 +46,8 @@
         {
             // اجرای دستور به صورت غیرهمزمان
             bool status = await Task.Run(() => dashboardDotnet.RunCmdFile(
-                "cd ../../../../../release_v1/dotnetapp && dotnet MokebManagerNg.HttpApi.Host.dll"
-                , "http://localhost:5000"));
+                @"cd .\release_v1\dotnetapp && dotnet MokebManagerNg.HttpApi.Host.dll --urls=https://0.0.0.0:44355"
+                , "https://0.0.0.0:44355"));
 
             // به‌روزرسانی کنترل UI از Thread اصلی
             this.Invoke(new Action(async () =>
@@ -62,7 +69,7 @@
         {
             // اجرای دستور به صورت غیرهمزمان
             bool status = await Task.Run(() => dashboardAngular.RunCmdFile(
-                "cd ../../../../../../MokebManager/MokebManagerNg/angular && npm start",
+                @"cd .\release_v1\angularapp && npm start",
                 "Compiled successfully"));
 
             // به‌روزرسانی کنترل UI از Thread اصلی
@@ -86,9 +93,9 @@
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string sourceFile = @"../../../../../release_v1/dotnetapp/MokebManagerNg.db";
+            string sourceFile = @"./release_v1/dotnetapp/MokebManagerNg.db";
             string destinationFile = 
-                $@"../../../../../Database_Backup/MokebManagerNg__{DateTime.Now.ToString("yy-MM-dd-HH-mm-ss")}.db";
+                $@"./Database_Backup/MokebManagerNg__{DateTime.Now.ToString("yy-MM-dd-HH-mm-ss")}.db";
             File.Copy(sourceFile, destinationFile);
             MessageBox.Show("با موفقیت ذخیره شد.");
         }

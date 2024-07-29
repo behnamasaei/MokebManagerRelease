@@ -2936,3 +2936,356 @@
 2024-07-29 10:20:21.094 +03:30 [INF] Start cleanup tokens.
 2024-07-29 10:20:21.880 +03:30 [INF] Start cleanup authorizations.
 2024-07-29 10:20:21.957 +03:30 [INF] Lock is released for TokenCleanupBackgroundWorker
+2024-07-29 10:43:36.222 +03:30 [INF] Starting MokebManagerNg.HttpApi.Host.
+2024-07-29 10:43:41.040 +03:30 [INF] Loaded ABP modules:
+2024-07-29 10:43:41.041 +03:30 [INF] - MokebManagerNg.MokebManagerNgHttpApiHostModule
+2024-07-29 10:43:41.041 +03:30 [INF]   - MokebManagerNg.MokebManagerNgHttpApiModule
+2024-07-29 10:43:41.041 +03:30 [INF]     - MokebManagerNg.MokebManagerNgApplicationContractsModule
+2024-07-29 10:43:41.041 +03:30 [INF]       - MokebManagerNg.MokebManagerNgDomainSharedModule
+2024-07-29 10:43:41.041 +03:30 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2024-07-29 10:43:41.041 +03:30 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2024-07-29 10:43:41.041 +03:30 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2024-07-29 10:43:41.041 +03:30 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2024-07-29 10:43:41.041 +03:30 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2024-07-29 10:43:41.041 +03:30 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2024-07-29 10:43:41.041 +03:30 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2024-07-29 10:43:41.041 +03:30 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2024-07-29 10:43:41.041 +03:30 [INF]                 - Volo.Abp.Data.AbpDataModule
+2024-07-29 10:43:41.041 +03:30 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2024-07-29 10:43:41.042 +03:30 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2024-07-29 10:43:41.042 +03:30 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2024-07-29 10:43:41.042 +03:30 [INF]               - Volo.Abp.Threading.AbpThreadingModule
+2024-07-29 10:43:41.042 +03:30 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2024-07-29 10:43:41.042 +03:30 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2024-07-29 10:43:41.042 +03:30 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2024-07-29 10:43:41.042 +03:30 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2024-07-29 10:43:41.042 +03:30 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2024-07-29 10:43:41.042 +03:30 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2024-07-29 10:43:41.042 +03:30 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2024-07-29 10:43:41.042 +03:30 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2024-07-29 10:43:41.042 +03:30 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2024-07-29 10:43:41.042 +03:30 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2024-07-29 10:43:41.042 +03:30 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2024-07-29 10:43:41.042 +03:30 [INF]         - Volo.Abp.OpenIddict.AbpOpenIddictDomainSharedModule
+2024-07-29 10:43:41.042 +03:30 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2024-07-29 10:43:41.042 +03:30 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2024-07-29 10:43:41.042 +03:30 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2024-07-29 10:43:41.042 +03:30 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2024-07-29 10:43:41.042 +03:30 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2024-07-29 10:43:41.042 +03:30 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2024-07-29 10:43:41.042 +03:30 [INF]               - Volo.Abp.Json.AbpJsonModule
+2024-07-29 10:43:41.042 +03:30 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2024-07-29 10:43:41.042 +03:30 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2024-07-29 10:43:41.042 +03:30 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2024-07-29 10:43:41.042 +03:30 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2024-07-29 10:43:41.042 +03:30 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2024-07-29 10:43:41.042 +03:30 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2024-07-29 10:43:41.042 +03:30 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2024-07-29 10:43:41.042 +03:30 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2024-07-29 10:43:41.042 +03:30 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2024-07-29 10:43:41.042 +03:30 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2024-07-29 10:43:41.042 +03:30 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2024-07-29 10:43:41.042 +03:30 [INF]             - Volo.Abp.Http.AbpHttpModule
+2024-07-29 10:43:41.042 +03:30 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2024-07-29 10:43:41.042 +03:30 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2024-07-29 10:43:41.042 +03:30 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2024-07-29 10:43:41.042 +03:30 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2024-07-29 10:43:41.042 +03:30 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2024-07-29 10:43:41.042 +03:30 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2024-07-29 10:43:41.042 +03:30 [INF]             - Volo.Abp.UI.AbpUiModule
+2024-07-29 10:43:41.042 +03:30 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2024-07-29 10:43:41.042 +03:30 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2024-07-29 10:43:41.042 +03:30 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2024-07-29 10:43:41.042 +03:30 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2024-07-29 10:43:41.042 +03:30 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2024-07-29 10:43:41.042 +03:30 [INF]               - Volo.Abp.Caching.AbpCachingModule
+2024-07-29 10:43:41.042 +03:30 [INF]                 - Volo.Abp.Serialization.AbpSerializationModule
+2024-07-29 10:43:41.042 +03:30 [INF]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2024-07-29 10:43:41.042 +03:30 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2024-07-29 10:43:41.042 +03:30 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2024-07-29 10:43:41.042 +03:30 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2024-07-29 10:43:41.042 +03:30 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2024-07-29 10:43:41.042 +03:30 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2024-07-29 10:43:41.042 +03:30 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2024-07-29 10:43:41.042 +03:30 [INF]   - MokebManagerNg.MokebManagerNgApplicationModule
+2024-07-29 10:43:41.042 +03:30 [INF]     - MokebManagerNg.MokebManagerNgDomainModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2024-07-29 10:43:41.042 +03:30 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2024-07-29 10:43:41.042 +03:30 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2024-07-29 10:43:41.042 +03:30 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2024-07-29 10:43:41.042 +03:30 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.OpenIddict.AbpOpenIddictDomainModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.PermissionManagement.OpenIddict.AbpPermissionManagementDomainOpenIddictModule
+2024-07-29 10:43:41.042 +03:30 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2024-07-29 10:43:41.042 +03:30 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2024-07-29 10:43:41.042 +03:30 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2024-07-29 10:43:41.042 +03:30 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2024-07-29 10:43:41.042 +03:30 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2024-07-29 10:43:41.042 +03:30 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2024-07-29 10:43:41.042 +03:30 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2024-07-29 10:43:41.042 +03:30 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2024-07-29 10:43:41.042 +03:30 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2024-07-29 10:43:41.042 +03:30 [INF]     - Volo.Abp.BlobStoring.AbpBlobStoringModule
+2024-07-29 10:43:41.042 +03:30 [INF]     - Volo.Abp.BlobStoring.FileSystem.AbpBlobStoringFileSystemModule
+2024-07-29 10:43:41.042 +03:30 [INF]     - Volo.Abp.BackgroundWorkers.Quartz.AbpBackgroundWorkersQuartzModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.Quartz.AbpQuartzModule
+2024-07-29 10:43:41.042 +03:30 [INF]   - MokebManagerNg.EntityFrameworkCore.MokebManagerNgEntityFrameworkCoreModule
+2024-07-29 10:43:41.042 +03:30 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2024-07-29 10:43:41.042 +03:30 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2024-07-29 10:43:41.042 +03:30 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2024-07-29 10:43:41.042 +03:30 [INF]     - Volo.Abp.OpenIddict.EntityFrameworkCore.AbpOpenIddictEntityFrameworkCoreModule
+2024-07-29 10:43:41.043 +03:30 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2024-07-29 10:43:41.043 +03:30 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2024-07-29 10:43:41.043 +03:30 [INF]     - Volo.Abp.EntityFrameworkCore.Sqlite.AbpEntityFrameworkCoreSqliteModule
+2024-07-29 10:43:41.043 +03:30 [INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2024-07-29 10:43:41.043 +03:30 [INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2024-07-29 10:43:41.043 +03:30 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2024-07-29 10:43:41.043 +03:30 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2024-07-29 10:43:41.043 +03:30 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite.AbpAspNetCoreMvcUiLeptonXLiteThemeModule
+2024-07-29 10:43:41.043 +03:30 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2024-07-29 10:43:41.043 +03:30 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2024-07-29 10:43:41.043 +03:30 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2024-07-29 10:43:41.043 +03:30 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2024-07-29 10:43:41.043 +03:30 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2024-07-29 10:43:41.043 +03:30 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2024-07-29 10:43:41.043 +03:30 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2024-07-29 10:43:41.043 +03:30 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2024-07-29 10:43:41.043 +03:30 [INF]   - Volo.Abp.Account.Web.AbpAccountWebOpenIddictModule
+2024-07-29 10:43:41.043 +03:30 [INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+2024-07-29 10:43:41.043 +03:30 [INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2024-07-29 10:43:41.043 +03:30 [INF]     - Volo.Abp.OpenIddict.AbpOpenIddictAspNetCoreModule
+2024-07-29 10:43:41.043 +03:30 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2024-07-29 10:43:41.043 +03:30 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2024-07-29 10:43:41.153 +03:30 [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2024-07-29 10:43:41.153 +03:30 [INF] Quartz Scheduler created
+2024-07-29 10:43:41.154 +03:30 [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+2024-07-29 10:43:41.156 +03:30 [INF] RAMJobStore initialized.
+2024-07-29 10:43:41.156 +03:30 [INF] Quartz Scheduler 3.7.0.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+2024-07-29 10:43:41.157 +03:30 [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+2024-07-29 10:43:41.157 +03:30 [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+2024-07-29 10:43:41.177 +03:30 [INF] Adding 0 jobs, 0 triggers.
+2024-07-29 10:43:41.553 +03:30 [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2024-07-29 10:43:42.957 +03:30 [INF] User profile is available. Using 'C:\Users\behna\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-29 10:43:43.400 +03:30 [INF] Initialized all ABP modules.
+2024-07-29 10:43:43.712 +03:30 [INF] Now listening on: https://0.0.0.0:44355
+2024-07-29 10:43:43.712 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-29 10:43:43.712 +03:30 [INF] Hosting environment: Production
+2024-07-29 10:43:43.712 +03:30 [INF] Content root path: C:\Users\behna\MokebManagerRelease\release_v1\dotnetapp
+2024-07-29 10:43:46.313 +03:30 [INF] Lock is acquired for TokenCleanupBackgroundWorker
+2024-07-29 10:43:47.214 +03:30 [INF] Start cleanup.
+2024-07-29 10:43:47.214 +03:30 [INF] Start cleanup tokens.
+2024-07-29 10:43:47.981 +03:30 [INF] Start cleanup authorizations.
+2024-07-29 10:43:48.044 +03:30 [INF] Lock is released for TokenCleanupBackgroundWorker
+2024-07-29 10:44:28.800 +03:30 [INF] Request starting HTTP/2 GET https://192.168.1.104:44355/ - null null
+2024-07-29 10:44:29.448 +03:30 [INF] Executing endpoint 'MokebManagerNg.Controllers.HomeController.Index (MokebManagerNg.HttpApi.Host)'
+2024-07-29 10:44:29.474 +03:30 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller MokebManagerNg.Controllers.HomeController (MokebManagerNg.HttpApi.Host).
+2024-07-29 10:44:29.552 +03:30 [INF] Executing RedirectResult, redirecting to /swagger.
+2024-07-29 10:44:29.557 +03:30 [INF] Executed action MokebManagerNg.Controllers.HomeController.Index (MokebManagerNg.HttpApi.Host) in 77.9316ms
+2024-07-29 10:44:29.557 +03:30 [INF] Executed endpoint 'MokebManagerNg.Controllers.HomeController.Index (MokebManagerNg.HttpApi.Host)'
+2024-07-29 10:44:29.570 +03:30 [INF] Request finished HTTP/2 GET https://192.168.1.104:44355/ - 302 0 null 770.7618ms
+2024-07-29 10:44:29.585 +03:30 [INF] Request starting HTTP/2 GET https://192.168.1.104:44355/swagger - null null
+2024-07-29 10:44:29.595 +03:30 [INF] Request finished HTTP/2 GET https://192.168.1.104:44355/swagger - 301 0 null 9.8124ms
+2024-07-29 10:44:29.616 +03:30 [INF] Request starting HTTP/2 GET https://192.168.1.104:44355/swagger/index.html - null null
+2024-07-29 10:44:29.776 +03:30 [INF] Request finished HTTP/2 GET https://192.168.1.104:44355/swagger/index.html - 200 null text/html;charset=utf-8 160.0058ms
+2024-07-29 10:44:29.794 +03:30 [INF] Request starting HTTP/2 GET https://192.168.1.104:44355/swagger/swagger-ui.css - null null
+2024-07-29 10:44:29.806 +03:30 [INF] Request starting HTTP/2 GET https://192.168.1.104:44355/swagger/ui/abp.js - null null
+2024-07-29 10:44:29.814 +03:30 [INF] Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'N/A'
+2024-07-29 10:44:29.814 +03:30 [INF] Request finished HTTP/2 GET https://192.168.1.104:44355/swagger/ui/abp.js - 200 3122 application/javascript 8.0553ms
+2024-07-29 10:44:29.814 +03:30 [INF] Request starting HTTP/2 GET https://192.168.1.104:44355/swagger/ui/abp.swagger.js - null null
+2024-07-29 10:44:29.823 +03:30 [INF] Request starting HTTP/2 GET https://192.168.1.104:44355/swagger/swagger-ui-bundle.js - null null
+2024-07-29 10:44:29.836 +03:30 [INF] Request starting HTTP/2 GET https://192.168.1.104:44355/swagger/swagger-ui-standalone-preset.js - null null
+2024-07-29 10:44:29.843 +03:30 [INF] Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'N/A'
+2024-07-29 10:44:29.844 +03:30 [INF] Request finished HTTP/2 GET https://192.168.1.104:44355/swagger/ui/abp.swagger.js - 200 4510 application/javascript 29.6834ms
+2024-07-29 10:44:29.897 +03:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-07-29 10:44:29.897 +03:30 [INF] Request finished HTTP/2 GET https://192.168.1.104:44355/swagger/swagger-ui.css - 200 144929 text/css 102.8042ms
+2024-07-29 10:44:29.946 +03:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-07-29 10:44:29.946 +03:30 [INF] Request finished HTTP/2 GET https://192.168.1.104:44355/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 110.0177ms
+2024-07-29 10:44:30.002 +03:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-07-29 10:44:30.002 +03:30 [INF] Request finished HTTP/2 GET https://192.168.1.104:44355/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 178.5497ms
+2024-07-29 10:44:30.492 +03:30 [INF] Request starting HTTP/2 GET https://192.168.1.104:44355/swagger/v1/swagger.json - null null
+2024-07-29 10:44:31.191 +03:30 [INF] Request starting HTTP/2 GET https://192.168.1.104:44355/swagger/favicon-32x32.png - null null
+2024-07-29 10:44:31.197 +03:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-07-29 10:44:31.197 +03:30 [INF] Request finished HTTP/2 GET https://192.168.1.104:44355/swagger/favicon-32x32.png - 200 628 image/png 5.4556ms
+2024-07-29 10:44:31.217 +03:30 [INF] Request finished HTTP/2 GET https://192.168.1.104:44355/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 725.6792ms
+2024-07-29 11:43:41.509 +03:30 [INF] Lock is acquired for TokenCleanupBackgroundWorker
+2024-07-29 11:43:41.512 +03:30 [INF] Start cleanup.
+2024-07-29 11:43:41.512 +03:30 [INF] Start cleanup tokens.
+2024-07-29 11:43:41.533 +03:30 [INF] Start cleanup authorizations.
+2024-07-29 11:43:41.543 +03:30 [INF] Lock is released for TokenCleanupBackgroundWorker
+2024-07-29 12:43:41.506 +03:30 [INF] Lock is acquired for TokenCleanupBackgroundWorker
+2024-07-29 12:43:41.507 +03:30 [INF] Start cleanup.
+2024-07-29 12:43:41.507 +03:30 [INF] Start cleanup tokens.
+2024-07-29 12:43:41.514 +03:30 [INF] Start cleanup authorizations.
+2024-07-29 12:43:41.521 +03:30 [INF] Lock is released for TokenCleanupBackgroundWorker
+2024-07-29 12:54:04.971 +03:30 [INF] Starting MokebManagerNg.HttpApi.Host.
+2024-07-29 12:54:09.301 +03:30 [INF] Loaded ABP modules:
+2024-07-29 12:54:09.303 +03:30 [INF] - MokebManagerNg.MokebManagerNgHttpApiHostModule
+2024-07-29 12:54:09.303 +03:30 [INF]   - MokebManagerNg.MokebManagerNgHttpApiModule
+2024-07-29 12:54:09.303 +03:30 [INF]     - MokebManagerNg.MokebManagerNgApplicationContractsModule
+2024-07-29 12:54:09.303 +03:30 [INF]       - MokebManagerNg.MokebManagerNgDomainSharedModule
+2024-07-29 12:54:09.303 +03:30 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2024-07-29 12:54:09.304 +03:30 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2024-07-29 12:54:09.304 +03:30 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2024-07-29 12:54:09.304 +03:30 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2024-07-29 12:54:09.304 +03:30 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2024-07-29 12:54:09.304 +03:30 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2024-07-29 12:54:09.304 +03:30 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2024-07-29 12:54:09.304 +03:30 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2024-07-29 12:54:09.304 +03:30 [INF]                 - Volo.Abp.Data.AbpDataModule
+2024-07-29 12:54:09.304 +03:30 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2024-07-29 12:54:09.304 +03:30 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2024-07-29 12:54:09.304 +03:30 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2024-07-29 12:54:09.304 +03:30 [INF]               - Volo.Abp.Threading.AbpThreadingModule
+2024-07-29 12:54:09.304 +03:30 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2024-07-29 12:54:09.304 +03:30 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2024-07-29 12:54:09.304 +03:30 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2024-07-29 12:54:09.304 +03:30 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2024-07-29 12:54:09.305 +03:30 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2024-07-29 12:54:09.305 +03:30 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2024-07-29 12:54:09.305 +03:30 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2024-07-29 12:54:09.305 +03:30 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2024-07-29 12:54:09.305 +03:30 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2024-07-29 12:54:09.305 +03:30 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2024-07-29 12:54:09.305 +03:30 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2024-07-29 12:54:09.305 +03:30 [INF]         - Volo.Abp.OpenIddict.AbpOpenIddictDomainSharedModule
+2024-07-29 12:54:09.305 +03:30 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2024-07-29 12:54:09.306 +03:30 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2024-07-29 12:54:09.306 +03:30 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2024-07-29 12:54:09.306 +03:30 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2024-07-29 12:54:09.306 +03:30 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2024-07-29 12:54:09.306 +03:30 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2024-07-29 12:54:09.306 +03:30 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2024-07-29 12:54:09.306 +03:30 [INF]               - Volo.Abp.Json.AbpJsonModule
+2024-07-29 12:54:09.306 +03:30 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2024-07-29 12:54:09.306 +03:30 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2024-07-29 12:54:09.306 +03:30 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2024-07-29 12:54:09.306 +03:30 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2024-07-29 12:54:09.306 +03:30 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2024-07-29 12:54:09.306 +03:30 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2024-07-29 12:54:09.306 +03:30 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2024-07-29 12:54:09.306 +03:30 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2024-07-29 12:54:09.306 +03:30 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2024-07-29 12:54:09.306 +03:30 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2024-07-29 12:54:09.306 +03:30 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2024-07-29 12:54:09.306 +03:30 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2024-07-29 12:54:09.306 +03:30 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2024-07-29 12:54:09.306 +03:30 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2024-07-29 12:54:09.306 +03:30 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2024-07-29 12:54:09.306 +03:30 [INF]             - Volo.Abp.Http.AbpHttpModule
+2024-07-29 12:54:09.306 +03:30 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2024-07-29 12:54:09.306 +03:30 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2024-07-29 12:54:09.306 +03:30 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2024-07-29 12:54:09.306 +03:30 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2024-07-29 12:54:09.306 +03:30 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2024-07-29 12:54:09.306 +03:30 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2024-07-29 12:54:09.306 +03:30 [INF]             - Volo.Abp.UI.AbpUiModule
+2024-07-29 12:54:09.306 +03:30 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2024-07-29 12:54:09.306 +03:30 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2024-07-29 12:54:09.306 +03:30 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2024-07-29 12:54:09.306 +03:30 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2024-07-29 12:54:09.306 +03:30 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2024-07-29 12:54:09.306 +03:30 [INF]               - Volo.Abp.Caching.AbpCachingModule
+2024-07-29 12:54:09.306 +03:30 [INF]                 - Volo.Abp.Serialization.AbpSerializationModule
+2024-07-29 12:54:09.306 +03:30 [INF]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2024-07-29 12:54:09.306 +03:30 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2024-07-29 12:54:09.306 +03:30 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2024-07-29 12:54:09.306 +03:30 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2024-07-29 12:54:09.306 +03:30 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2024-07-29 12:54:09.306 +03:30 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2024-07-29 12:54:09.306 +03:30 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2024-07-29 12:54:09.306 +03:30 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2024-07-29 12:54:09.306 +03:30 [INF]   - MokebManagerNg.MokebManagerNgApplicationModule
+2024-07-29 12:54:09.306 +03:30 [INF]     - MokebManagerNg.MokebManagerNgDomainModule
+2024-07-29 12:54:09.306 +03:30 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2024-07-29 12:54:09.306 +03:30 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2024-07-29 12:54:09.306 +03:30 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2024-07-29 12:54:09.306 +03:30 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2024-07-29 12:54:09.306 +03:30 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2024-07-29 12:54:09.306 +03:30 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2024-07-29 12:54:09.306 +03:30 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2024-07-29 12:54:09.306 +03:30 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2024-07-29 12:54:09.306 +03:30 [INF]       - Volo.Abp.OpenIddict.AbpOpenIddictDomainModule
+2024-07-29 12:54:09.306 +03:30 [INF]       - Volo.Abp.PermissionManagement.OpenIddict.AbpPermissionManagementDomainOpenIddictModule
+2024-07-29 12:54:09.306 +03:30 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2024-07-29 12:54:09.306 +03:30 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2024-07-29 12:54:09.306 +03:30 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2024-07-29 12:54:09.306 +03:30 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2024-07-29 12:54:09.306 +03:30 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2024-07-29 12:54:09.306 +03:30 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2024-07-29 12:54:09.306 +03:30 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2024-07-29 12:54:09.306 +03:30 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2024-07-29 12:54:09.306 +03:30 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2024-07-29 12:54:09.306 +03:30 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2024-07-29 12:54:09.307 +03:30 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.BlobStoring.AbpBlobStoringModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.BlobStoring.FileSystem.AbpBlobStoringFileSystemModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.BackgroundWorkers.Quartz.AbpBackgroundWorkersQuartzModule
+2024-07-29 12:54:09.307 +03:30 [INF]       - Volo.Abp.Quartz.AbpQuartzModule
+2024-07-29 12:54:09.307 +03:30 [INF]   - MokebManagerNg.EntityFrameworkCore.MokebManagerNgEntityFrameworkCoreModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2024-07-29 12:54:09.307 +03:30 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2024-07-29 12:54:09.307 +03:30 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.OpenIddict.EntityFrameworkCore.AbpOpenIddictEntityFrameworkCoreModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.EntityFrameworkCore.Sqlite.AbpEntityFrameworkCoreSqliteModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2024-07-29 12:54:09.307 +03:30 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite.AbpAspNetCoreMvcUiLeptonXLiteThemeModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2024-07-29 12:54:09.307 +03:30 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2024-07-29 12:54:09.307 +03:30 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2024-07-29 12:54:09.307 +03:30 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2024-07-29 12:54:09.307 +03:30 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2024-07-29 12:54:09.307 +03:30 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2024-07-29 12:54:09.307 +03:30 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2024-07-29 12:54:09.307 +03:30 [INF]   - Volo.Abp.Account.Web.AbpAccountWebOpenIddictModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+2024-07-29 12:54:09.307 +03:30 [INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2024-07-29 12:54:09.307 +03:30 [INF]     - Volo.Abp.OpenIddict.AbpOpenIddictAspNetCoreModule
+2024-07-29 12:54:09.307 +03:30 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2024-07-29 12:54:09.307 +03:30 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2024-07-29 12:54:09.432 +03:30 [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2024-07-29 12:54:09.432 +03:30 [INF] Quartz Scheduler created
+2024-07-29 12:54:09.433 +03:30 [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+2024-07-29 12:54:09.435 +03:30 [INF] RAMJobStore initialized.
+2024-07-29 12:54:09.436 +03:30 [INF] Quartz Scheduler 3.7.0.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+2024-07-29 12:54:09.436 +03:30 [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+2024-07-29 12:54:09.436 +03:30 [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+2024-07-29 12:54:09.455 +03:30 [INF] Adding 0 jobs, 0 triggers.
+2024-07-29 12:54:09.811 +03:30 [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2024-07-29 12:54:10.442 +03:30 [INF] User profile is available. Using 'C:\Users\behna\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-29 12:54:10.768 +03:30 [INF] Initialized all ABP modules.
+2024-07-29 12:54:10.987 +03:30 [INF] Now listening on: https://0.0.0.0:44355
+2024-07-29 12:54:10.987 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-29 12:54:10.987 +03:30 [INF] Hosting environment: Production
+2024-07-29 12:54:10.987 +03:30 [INF] Content root path: C:\Users\behna\MokebManagerRelease\release_v1\dotnetapp
+2024-07-29 12:54:12.137 +03:30 [INF] Lock is acquired for TokenCleanupBackgroundWorker
+2024-07-29 12:54:12.812 +03:30 [INF] Start cleanup.
+2024-07-29 12:54:12.813 +03:30 [INF] Start cleanup tokens.
+2024-07-29 12:54:13.524 +03:30 [INF] Start cleanup authorizations.
+2024-07-29 12:54:13.586 +03:30 [INF] Lock is released for TokenCleanupBackgroundWorker
+2024-07-29 12:54:15.626 +03:30 [INF] Application is shutting down...
+2024-07-29 12:54:15.640 +03:30 [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED shutting down.
+2024-07-29 12:54:15.642 +03:30 [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED paused.
+2024-07-29 12:54:15.649 +03:30 [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED Shutdown complete.

@@ -1,0 +1,17 @@
+C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\bin\Debug\net8.0-windows\MokebMangerDesktopApp.exe
+C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\bin\Debug\net8.0-windows\MokebMangerDesktopApp.deps.json
+C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\bin\Debug\net8.0-windows\MokebMangerDesktopApp.runtimeconfig.json
+C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\bin\Debug\net8.0-windows\MokebMangerDesktopApp.dll
+C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\bin\Debug\net8.0-windows\MokebMangerDesktopApp.pdb
+C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\obj\Debug\net8.0-windows\MokebMangerDesktopApp.Form1.resources
+C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\obj\Debug\net8.0-windows\MokebMangerDesktopApp.csproj.GenerateResource.cache
+C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\obj\Debug\net8.0-windows\MokebMangerDesktopApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\obj\Debug\net8.0-windows\MokebMangerDesktopApp.AssemblyInfoInputs.cache
+C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\obj\Debug\net8.0-windows\MokebMangerDesktopApp.AssemblyInfo.cs
+C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\obj\Debug\net8.0-windows\MokebMangerDesktopApp.csproj.CoreCompileInputs.cache
+C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\obj\Debug\net8.0-windows\MokebMangerDesktopApp.sourcelink.json
+C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\obj\Debug\net8.0-windows\MokebMangerDesktopApp.dll
+C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\obj\Debug\net8.0-windows\refint\MokebMangerDesktopApp.dll
+C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\obj\Debug\net8.0-windows\MokebMangerDesktopApp.pdb
+C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\obj\Debug\net8.0-windows\MokebMangerDesktopApp.genruntimeconfig.cache
+C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\obj\Debug\net8.0-windows\ref\MokebMangerDesktopApp.dll

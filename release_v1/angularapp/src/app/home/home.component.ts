@@ -73,9 +73,15 @@ export class HomeComponent {
         style: { margin: '10px 0px' },
       },
       {
-        label: this.localizationService.instant('::ExtensionOfReservation'),
+        label: 'تمدید پذیرش',
         icon: 'pi pi-calendar-plus',
         command: () => this.router.navigate(['./reservation']),
+        style: { margin: '10px 0px' },
+      },
+      {
+        label: 'تنظیمات',
+        icon: 'pi pi-building',
+        command: () => this.router.navigate(['./settings/mokeb-settings']),
         style: { margin: '10px 0px' },
       },
     ];

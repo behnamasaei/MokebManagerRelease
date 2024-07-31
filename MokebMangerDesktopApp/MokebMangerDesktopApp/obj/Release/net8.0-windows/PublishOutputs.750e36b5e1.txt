@@ -1,5 +1,0 @@
-C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\bin\Release\net8.0-windows\publish\MokebMangerDesktopApp.exe
-C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\bin\Release\net8.0-windows\publish\MokebMangerDesktopApp.dll
-C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\bin\Release\net8.0-windows\publish\MokebMangerDesktopApp.deps.json
-C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\bin\Release\net8.0-windows\publish\MokebMangerDesktopApp.runtimeconfig.json
-C:\Users\behna\MokebManagerRelease\MokebMangerDesktopApp\MokebMangerDesktopApp\bin\Release\net8.0-windows\publish\MokebMangerDesktopApp.pdb
